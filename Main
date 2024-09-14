@@ -1,0 +1,450 @@
+
+-- Instances:
+
+local LaunchFrame = Instance.new("Frame")
+local TopFrame = Instance.new("Frame")
+local CloseButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Launch = Instance.new("TextButton")
+local Changelog = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local MainFrame = Instance.new("Frame")
+local TopFrame_2 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local CloseButton_2 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local UniversalFrame = Instance.new("Frame")
+local TopFrame_3 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local CloseButton_3 = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+
+--Properties:
+
+LaunchFrame.Name = "LaunchFrame"
+LaunchFrame.Parent = game.StarterGui.ScreenGui
+LaunchFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+LaunchFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LaunchFrame.BorderSizePixel = 0
+LaunchFrame.Position = UDim2.new(0.343992859, 0, 0.168341711, 0)
+LaunchFrame.Size = UDim2.new(0, 384, 0, 528)
+
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = LaunchFrame
+TopFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame.BorderSizePixel = 0
+TopFrame.Size = UDim2.new(0, 383, 0, 25)
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = TopFrame
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.888733387, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 42, 0, 25)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 30.000
+
+TextLabel.Parent = TopFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.30026111, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 154, 0, 25)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Sun Hub - V1"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+Launch.Name = "Launch"
+Launch.Parent = LaunchFrame
+Launch.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Launch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Launch.BorderSizePixel = 0
+Launch.Position = UDim2.new(0, 0, 0.901185751, 0)
+Launch.Size = UDim2.new(0, 383, 0, 50)
+Launch.Font = Enum.Font.SourceSans
+Launch.Text = "Launch"
+Launch.TextColor3 = Color3.fromRGB(255, 255, 255)
+Launch.TextSize = 40.000
+
+Changelog.Name = "Changelog"
+Changelog.Parent = LaunchFrame
+Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Changelog.BackgroundTransparency = 1.000
+Changelog.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0, 0, 0.0473484844, 0)
+Changelog.Size = UDim2.new(0, 382, 0, 450)
+
+TextLabel_2.Parent = Changelog
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.00261780107, 0, -0.00154039171, 0)
+TextLabel_2.Size = UDim2.new(0, 383, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Changelog"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 30.000
+
+TextLabel_3.Parent = Changelog
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.00261780107, 0, 0.108888887, 0)
+TextLabel_3.Size = UDim2.new(0, 382, 0, 28)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Not much since its the first version"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = LaunchFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(-0.0553224869, 0, -0.0102881808, 0)
+MainFrame.Size = UDim2.new(0, 433, 0, 537)
+MainFrame.Visible = false
+
+TopFrame_2.Name = "TopFrame"
+TopFrame_2.Parent = MainFrame
+TopFrame_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TopFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame_2.BorderSizePixel = 0
+TopFrame_2.Size = UDim2.new(0, 433, 0, 33)
+
+TextLabel_4.Parent = TopFrame_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.30026111, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 164, 0, 33)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Sun Hub - V1"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 30.000
+
+CloseButton_2.Name = "CloseButton"
+CloseButton_2.Parent = TopFrame_2
+CloseButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_2.BackgroundTransparency = 1.000
+CloseButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton_2.BorderSizePixel = 0
+CloseButton_2.Position = UDim2.new(0.903002322, 0, 0, 0)
+CloseButton_2.Size = UDim2.new(0, 42, 0, 33)
+CloseButton_2.Font = Enum.Font.SourceSans
+CloseButton_2.Text = "X"
+CloseButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_2.TextSize = 30.000
+
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.0763500929, 0)
+TextButton.Size = UDim2.new(0, 433, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Universal"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 30.000
+
+UniversalFrame.Name = "UniversalFrame"
+UniversalFrame.Parent = MainFrame
+UniversalFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+UniversalFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UniversalFrame.BorderSizePixel = 0
+UniversalFrame.Position = UDim2.new(0.478060037, 0, 0.180633143, 0)
+UniversalFrame.Size = UDim2.new(0, 433, 0, 446)
+UniversalFrame.Visible = false
+
+TopFrame_3.Name = "TopFrame"
+TopFrame_3.Parent = UniversalFrame
+TopFrame_3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TopFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame_3.BorderSizePixel = 0
+TopFrame_3.Size = UDim2.new(0, 433, 0, 33)
+
+TextLabel_5.Parent = TopFrame_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.30026111, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 164, 0, 33)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Universal"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+
+CloseButton_3.Name = "CloseButton"
+CloseButton_3.Parent = TopFrame_3
+CloseButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_3.BackgroundTransparency = 1.000
+CloseButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton_3.BorderSizePixel = 0
+CloseButton_3.Position = UDim2.new(0.903002322, 0, 0, 0)
+CloseButton_3.Size = UDim2.new(0, 42, 0, 33)
+CloseButton_3.Font = Enum.Font.SourceSans
+CloseButton_3.Text = "X"
+CloseButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton_3.TextSize = 30.000
+
+Esp.Name = "Esp"
+Esp.Parent = UniversalFrame
+Esp.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.016166281, 0, 0.121076234, 0)
+Esp.Size = UDim2.new(0, 200, 0, 50)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 30.000
+Esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+end)
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = UniversalFrame
+Aimbot.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Aimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.521939933, 0, 0.121076234, 0)
+Aimbot.Size = UDim2.new(0, 200, 0, 50)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 30.000
+Esp.MouseButton1Down:connect(function()
+	local teamCheck = true
+	local fov = 90
+	local smoothing = 1
+	local predictionFactor = 0.08  -- Adjust this factor to improve prediction accuracy
+	local highlightEnabled = false  -- Variable to enable or disable target highlighting. Change to False if using an ESP script.
+	local lockPart = "HumanoidRootPart"  -- Choose what part it locks onto. Ex. HumanoidRootPart or Head
+
+	local Toggle = false  -- Enable or disable toggle mode
+	local ToggleKey = Enum.KeyCode.E  -- Choose the key for toggling aimbot lock
+
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local StarterGui = game:GetService("StarterGui")
+	local Players = game:GetService("Players")
+
+	local FOVring = Drawing.new("Circle")
+	FOVring.Visible = true
+	FOVring.Thickness = 1
+	FOVring.Radius = fov
+	FOVring.Transparency = 0.8
+	FOVring.Color = Color3.fromRGB(255, 128, 128)
+	FOVring.Position = workspace.CurrentCamera.ViewportSize / 2
+
+	local currentTarget = nil
+	local aimbotEnabled = true
+	local toggleState = false  -- Variable to keep track of toggle state
+	local debounce = false  -- Debounce variable
+
+	local function getClosest(cframe)
+		local ray = Ray.new(cframe.Position, cframe.LookVector).Unit
+		local target = nil
+		local mag = math.huge
+		local screenCenter = workspace.CurrentCamera.ViewportSize / 2
+
+		for i, v in pairs(Players:GetPlayers()) do
+			if v.Character and v.Character:FindFirstChild(lockPart) and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= Players.LocalPlayer and (v.Team ~= Players.LocalPlayer.Team or (not teamCheck)) then
+				local screenPoint, onScreen = workspace.CurrentCamera:WorldToViewportPoint(v.Character[lockPart].Position)
+				local distanceFromCenter = (Vector2.new(screenPoint.X, screenPoint.Y) - screenCenter).Magnitude
+
+				if onScreen and distanceFromCenter <= fov then
+					local magBuf = (v.Character[lockPart].Position - ray:ClosestPoint(v.Character[lockPart].Position)).Magnitude
+
+					if magBuf < mag then
+						mag = magBuf
+						target = v
+					end
+				end
+			end
+		end
+
+		return target
+	end
+
+	local function updateFOVRing()
+		FOVring.Position = workspace.CurrentCamera.ViewportSize / 2
+	end
+
+	local function highlightTarget(target)
+		if highlightEnabled and target and target.Character then
+			local highlight = Instance.new("Highlight")
+			highlight.Adornee = target.Character
+			highlight.FillColor = Color3.fromRGB(255, 128, 128)
+			highlight.OutlineColor = Color3.fromRGB(255, 0, 0)
+			highlight.Parent = target.Character
+		end
+	end
+
+	local function removeHighlight(target)
+		if highlightEnabled and target and target.Character and target.Character:FindFirstChildOfClass("Highlight") then
+			target.Character:FindFirstChildOfClass("Highlight"):Destroy()
+		end
+	end
+
+	local function predictPosition(target)
+		if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+			local velocity = target.Character.HumanoidRootPart.Velocity
+			local position = target.Character[lockPart].Position
+			local predictedPosition = position + (velocity * predictionFactor)
+			return predictedPosition
+		end
+		return nil
+	end
+
+	local function handleToggle()
+		if debounce then return end
+		debounce = true
+		toggleState = not toggleState
+		wait(0.3)  -- Debounce time to prevent multiple toggles
+		debounce = false
+	end
+
+	loop = RunService.RenderStepped:Connect(function()
+		if aimbotEnabled then
+			updateFOVRing()
+
+			local localPlayer = Players.LocalPlayer.Character
+			local cam = workspace.CurrentCamera
+			local screenCenter = workspace.CurrentCamera.ViewportSize / 2
+
+			if Toggle then
+				if UserInputService:IsKeyDown(ToggleKey) then
+					handleToggle()
+				end
+			else
+				toggleState = UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2)
+			end
+
+			if toggleState then
+				if not currentTarget then
+					currentTarget = getClosest(cam.CFrame)
+					highlightTarget(currentTarget)  -- Highlight the new target if enabled
+				end
+
+				if currentTarget and currentTarget.Character and currentTarget.Character:FindFirstChild(lockPart) then
+					local predictedPosition = predictPosition(currentTarget)
+					if predictedPosition then
+						workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame:Lerp(CFrame.new(cam.CFrame.Position, predictedPosition), smoothing)
+					end
+					FOVring.Color = Color3.fromRGB(0, 255, 0)  -- Change FOV ring color to green when locked onto a target
+				else
+					FOVring.Color = Color3.fromRGB(255, 128, 128)  -- Revert FOV ring color to original when not locked onto a target
+				end
+			else
+				if currentTarget and highlightEnabled then
+					removeHighlight(currentTarget)  -- Remove highlight from the old target
+				end
+				currentTarget = nil
+				FOVring.Color = Color3.fromRGB(255, 128, 128)  -- Revert FOV ring color to original when not locked onto a target
+			end
+		end
+	end)
+
+end)
+
+-- Scripts:
+
+local function OSNOU_fake_script() -- CloseButton.CloseScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(OSNOU_fake_script)()
+local function QYSMOO_fake_script() -- Launch.LaunchScript 
+	local script = Instance.new('LocalScript', Launch)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = true
+	end)
+end
+coroutine.wrap(QYSMOO_fake_script)()
+local function ESSFAZ_fake_script() -- LaunchFrame.DragScript 
+	local script = Instance.new('LocalScript', LaunchFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ESSFAZ_fake_script)()
+local function MPIEKK_fake_script() -- CloseButton_2.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(MPIEKK_fake_script)()
+local function NDWK_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.UniversalFrame.Visible = true
+	end)
+end
+coroutine.wrap(NDWK_fake_script)()
+local function HVVC_fake_script() -- CloseButton_3.LocalScript 
+	local script = Instance.new('LocalScript', CloseButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(HVVC_fake_script)()
