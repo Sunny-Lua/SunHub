@@ -213,7 +213,7 @@ Esp.Text = "Esp"
 Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
 Esp.TextSize = 30.000
 Esp.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+	Print("Not Working Right now")
 end)
 
 Aimbot.Name = "Aimbot"
