@@ -220,7 +220,7 @@ Esp.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Esp.BorderSizePixel = 0
 Esp.Position = UDim2.new(0.016166281, 0, 0.121076234, 0)
-Esp.Size = UDim2.new(0, 200, 0, 50)
+Esp.Size = UDim2.new(0, 200, 0, 50
 Esp.Font = Enum.Font.SourceSans
 Esp.Text = "Esp"
 Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -244,7 +244,7 @@ Aimbot.MouseButton1Down:connect(function()
 	local teamCheck = false
 	local fov = 90
 	local smoothing = 1
-	local predictionFactor = 0.5  -- Adjust this factor to improve prediction accuracy
+	local predictionFactor = 0.1  -- Adjust this factor to improve prediction accuracy
 	local highlightEnabled = false  -- Variable to enable or disable target highlighting. Change to False if using an ESP script.
 	local lockPart = "Head"  -- Choose what part it locks onto. Ex. HumanoidRootPart or Head
 
