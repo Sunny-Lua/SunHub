@@ -1,5 +1,5 @@
--- Sun Hub
--- Version: 1.0
+-- Sun hub
+-- Version: 1.1
 
 -- Instances:
 
@@ -12,6 +12,7 @@ local Launch = Instance.new("TextButton")
 local Changelog = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local Changes = Instance.new("TextLabel")
+local Discord = Instance.new("TextLabel")
 local MainFrame = Instance.new("Frame")
 local TopFrame_2 = Instance.new("Frame")
 local MainTitle = Instance.new("TextLabel")
@@ -23,6 +24,7 @@ local UniversalTitle = Instance.new("TextLabel")
 local CloseButton_3 = Instance.new("TextButton")
 local Esp = Instance.new("TextButton")
 local Aimbot = Instance.new("TextButton")
+local InfiniteYeild = Instance.new("TextButton")
 
 --Properties:
 
@@ -114,9 +116,22 @@ Changes.BorderSizePixel = 0
 Changes.Position = UDim2.new(0.00261780107, 0, 0.108888887, 0)
 Changes.Size = UDim2.new(0, 382, 0, 28)
 Changes.Font = Enum.Font.SourceSans
-Changes.Text = "the aimbot and esp doesnt work rn"
+Changes.Text = "Added Infinite yeild"
 Changes.TextColor3 = Color3.fromRGB(255, 255, 255)
-Changes.TextSize = 14.000
+Changes.TextSize = 20.000
+
+Discord.Name = "Discord"
+Discord.Parent = Changelog
+Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord.BackgroundTransparency = 1.000
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.0418848172, 0, 0.913333356, 0)
+Discord.Size = UDim2.new(0, 200, 0, 50)
+Discord.Font = Enum.Font.SourceSans
+Discord.Text = "https://discord.gg/ZYvZHmDtde"
+Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord.TextSize = 20.000
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = LaunchFrame
@@ -382,25 +397,40 @@ Aimbot.MouseButton1Down:connect(function()
 
 end)
 
+
+InfiniteYeild.Name = "InfiniteYeild"
+InfiniteYeild.Parent = UniversalFrame
+InfiniteYeild.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+InfiniteYeild.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYeild.BorderSizePixel = 0
+InfiniteYeild.Position = UDim2.new(0.016166281, 0, 0.253363222, 0)
+InfiniteYeild.Size = UDim2.new(0, 200, 0, 50)
+InfiniteYeild.Font = Enum.Font.SourceSans
+InfiniteYeild.Text = "Infinite Yeild"
+InfiniteYeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYeild.TextSize = 30.000
+InfiniteYeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
 -- Scripts:
 
-local function PQEU_fake_script() -- CloseButton.CloseScript 
+local function LKKF_fake_script() -- CloseButton.CloseScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(PQEU_fake_script)()
-local function DXRBBD_fake_script() -- Launch.LaunchScript 
+coroutine.wrap(LKKF_fake_script)()
+local function JSSL_fake_script() -- Launch.LaunchScript 
 	local script = Instance.new('LocalScript', Launch)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.MainFrame.Visible = true
 	end)
 end
-coroutine.wrap(DXRBBD_fake_script)()
-local function IJANQQ_fake_script() -- LaunchFrame.DragScript 
+coroutine.wrap(JSSL_fake_script)()
+local function KBINK_fake_script() -- LaunchFrame.DragScript 
 	local script = Instance.new('LocalScript', LaunchFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -443,28 +473,28 @@ local function IJANQQ_fake_script() -- LaunchFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(IJANQQ_fake_script)()
-local function XAOMXDS_fake_script() -- CloseButton_2.LocalScript 
+coroutine.wrap(KBINK_fake_script)()
+local function LUCK_fake_script() -- CloseButton_2.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(XAOMXDS_fake_script)()
-local function FLEJN_fake_script() -- UniversalButton.LocalScript 
+coroutine.wrap(LUCK_fake_script)()
+local function BYPHHZZ_fake_script() -- UniversalButton.LocalScript 
 	local script = Instance.new('LocalScript', UniversalButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.UniversalFrame.Visible = true
 	end)
 end
-coroutine.wrap(FLEJN_fake_script)()
-local function XZNIO_fake_script() -- CloseButton_3.LocalScript 
+coroutine.wrap(BYPHHZZ_fake_script)()
+local function SPGT_fake_script() -- CloseButton_3.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(XZNIO_fake_script)()
+coroutine.wrap(SPGT_fake_script)()
