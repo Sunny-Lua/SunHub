@@ -1,8 +1,6 @@
 -- Sun Hub
 -- Version: 1.0
-
 -- Instances:
-
 local SunHub = Instance.new("ScreenGui")
 local LaunchFrame = Instance.new("Frame")
 local TopFrame = Instance.new("Frame")
@@ -23,13 +21,10 @@ local UniversalTitle = Instance.new("TextLabel")
 local CloseButton_3 = Instance.new("TextButton")
 local Esp = Instance.new("TextButton")
 local Aimbot = Instance.new("TextButton")
-
 --Properties:
-
 SunHub.Name = "SunHub"
 SunHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 SunHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 LaunchFrame.Name = "LaunchFrame"
 LaunchFrame.Parent = SunHub
 LaunchFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
@@ -37,14 +32,12 @@ LaunchFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LaunchFrame.BorderSizePixel = 0
 LaunchFrame.Position = UDim2.new(0, 431, 0, 134)
 LaunchFrame.Size = UDim2.new(0, 384, 0, 528)
-
 TopFrame.Name = "TopFrame"
 TopFrame.Parent = LaunchFrame
 TopFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 TopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TopFrame.BorderSizePixel = 0
 TopFrame.Size = UDim2.new(0, 383, 0, 25)
-
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = TopFrame
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -57,7 +50,6 @@ CloseButton.Font = Enum.Font.SourceSans
 CloseButton.Text = "X"
 CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton.TextSize = 30.000
-
 NameXVersion.Name = "NameXVersion"
 NameXVersion.Parent = TopFrame
 NameXVersion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -70,7 +62,6 @@ NameXVersion.Font = Enum.Font.SourceSans
 NameXVersion.Text = "Sun Hub - V1"
 NameXVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameXVersion.TextSize = 20.000
-
 Launch.Name = "Launch"
 Launch.Parent = LaunchFrame
 Launch.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
@@ -82,7 +73,6 @@ Launch.Font = Enum.Font.SourceSans
 Launch.Text = "Launch"
 Launch.TextColor3 = Color3.fromRGB(255, 255, 255)
 Launch.TextSize = 40.000
-
 Changelog.Name = "Changelog"
 Changelog.Parent = LaunchFrame
 Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -91,7 +81,6 @@ Changelog.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Changelog.BorderSizePixel = 0
 Changelog.Position = UDim2.new(0, 0, 0.0473484844, 0)
 Changelog.Size = UDim2.new(0, 382, 0, 450)
-
 Title.Name = "Title"
 Title.Parent = Changelog
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -104,7 +93,6 @@ Title.Font = Enum.Font.SourceSans
 Title.Text = "Changelog"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 30.000
-
 Changes.Name = "Changes"
 Changes.Parent = Changelog
 Changes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -114,10 +102,9 @@ Changes.BorderSizePixel = 0
 Changes.Position = UDim2.new(0.00261780107, 0, 0.108888887, 0)
 Changes.Size = UDim2.new(0, 382, 0, 28)
 Changes.Font = Enum.Font.SourceSans
-Changes.Text = "If you need help with someting join our discord|https://discord.gg/Cp5nYuKYsM"
+Changes.Text = "the aimbot and esp doesnt work rn"
 Changes.TextColor3 = Color3.fromRGB(255, 255, 255)
 Changes.TextSize = 14.000
-
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = LaunchFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
@@ -126,14 +113,12 @@ MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.00260416674, 0, -0.0102882385, 0)
 MainFrame.Size = UDim2.new(0, 380, 0, 537)
 MainFrame.Visible = false
-
 TopFrame_2.Name = "TopFrame"
 TopFrame_2.Parent = MainFrame
 TopFrame_2.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 TopFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TopFrame_2.BorderSizePixel = 0
 TopFrame_2.Size = UDim2.new(0, 383, 0, 33)
-
 MainTitle.Name = "MainTitle"
 MainTitle.Parent = TopFrame_2
 MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -146,7 +131,6 @@ MainTitle.Font = Enum.Font.SourceSans
 MainTitle.Text = "Sun Hub - V1"
 MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 MainTitle.TextSize = 30.000
-
 CloseButton_2.Name = "CloseButton"
 CloseButton_2.Parent = TopFrame_2
 CloseButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -159,7 +143,6 @@ CloseButton_2.Font = Enum.Font.SourceSans
 CloseButton_2.Text = "X"
 CloseButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton_2.TextSize = 30.000
-
 UniversalButton.Name = "UniversalButton"
 UniversalButton.Parent = MainFrame
 UniversalButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
@@ -171,7 +154,6 @@ UniversalButton.Font = Enum.Font.SourceSans
 UniversalButton.Text = "Universal"
 UniversalButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 UniversalButton.TextSize = 30.000
-
 UniversalFrame.Name = "UniversalFrame"
 UniversalFrame.Parent = MainFrame
 UniversalFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
@@ -180,14 +162,12 @@ UniversalFrame.BorderSizePixel = 0
 UniversalFrame.Position = UDim2.new(0.951501012, 0, 0.411545694, 0)
 UniversalFrame.Size = UDim2.new(0, 433, 0, 446)
 UniversalFrame.Visible = false
-
 TopFrame_3.Name = "TopFrame"
 TopFrame_3.Parent = UniversalFrame
 TopFrame_3.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 TopFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TopFrame_3.BorderSizePixel = 0
 TopFrame_3.Size = UDim2.new(0, 433, 0, 33)
-
 UniversalTitle.Name = "UniversalTitle"
 UniversalTitle.Parent = TopFrame_3
 UniversalTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -200,7 +180,6 @@ UniversalTitle.Font = Enum.Font.SourceSans
 UniversalTitle.Text = "Universal"
 UniversalTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 UniversalTitle.TextSize = 30.000
-
 CloseButton_3.Name = "CloseButton"
 CloseButton_3.Parent = TopFrame_3
 CloseButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -213,14 +192,13 @@ CloseButton_3.Font = Enum.Font.SourceSans
 CloseButton_3.Text = "X"
 CloseButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton_3.TextSize = 30.000
-
 Esp.Name = "Esp"
 Esp.Parent = UniversalFrame
 Esp.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Esp.BorderSizePixel = 0
 Esp.Position = UDim2.new(0.016166281, 0, 0.121076234, 0)
-Esp.Size = UDim2.new(0, 200, 0, 50
+Esp.Size = UDim2.new(0, 200, 0, 50)
 Esp.Font = Enum.Font.SourceSans
 Esp.Text = "Esp"
 Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -231,12 +209,7 @@ end)
 
 Aimbot.Name = "Aimbot"
 Aimbot.Parent = UniversalFrame
-Aimbot.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-Aimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Aimbot.BorderSizePixel = 0
-Aimbot.Position = UDim2.new(0.521939933, 0, 0.121076234, 0)
-Aimbot.Size = UDim2.new(0, 200, 0, 50)
-Aimbot.Font = Enum.Font.SourceSans
+@@ -237,6 +240,147 @@ Aimbot.Font = Enum.Font.SourceSans
 Aimbot.Text = "Aimbot"
 Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aimbot.TextSize = 30.000
@@ -384,44 +357,33 @@ end)
 
 -- Scripts:
 
-local function PQEU_fake_script() -- CloseButton.CloseScript 
-	local script = Instance.new('LocalScript', CloseButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(PQEU_fake_script)()
-local function DXRBBD_fake_script() -- Launch.LaunchScript 
-	local script = Instance.new('LocalScript', Launch)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.MainFrame.Visible = true
-	end)
-end
-coroutine.wrap(DXRBBD_fake_script)()
-local function IJANQQ_fake_script() -- LaunchFrame.DragScript 
+@@ -260,39 +404,39 @@ local function IJANQQ_fake_script() -- LaunchFrame.DragScript
 	local script = Instance.new('LocalScript', LaunchFrame)
 
 	local UserInputService = game:GetService("UserInputService")
+
 	
 	local gui = script.Parent
+
 	
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
+
 	
 	local function update(input)
 		local delta = input.Position - dragStart
 		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
+
 	
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
+
 			
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
@@ -430,12 +392,14 @@ local function IJANQQ_fake_script() -- LaunchFrame.DragScript
 			end)
 		end
 	end)
+
 	
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
+
 	
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
@@ -446,7 +410,6 @@ end
 coroutine.wrap(IJANQQ_fake_script)()
 local function XAOMXDS_fake_script() -- CloseButton_2.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton_2)
-
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
@@ -454,7 +417,6 @@ end
 coroutine.wrap(XAOMXDS_fake_script)()
 local function FLEJN_fake_script() -- UniversalButton.LocalScript 
 	local script = Instance.new('LocalScript', UniversalButton)
-
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.UniversalFrame.Visible = true
 	end)
@@ -462,7 +424,6 @@ end
 coroutine.wrap(FLEJN_fake_script)()
 local function XZNIO_fake_script() -- CloseButton_3.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton_3)
-
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
