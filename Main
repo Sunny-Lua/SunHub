@@ -138,7 +138,7 @@ Discord.BorderSizePixel = 0
 Discord.Position = UDim2.new(0.0418848172, 0, 0.913333356, 0)
 Discord.Size = UDim2.new(0, 200, 0, 50)
 Discord.Font = Enum.Font.SourceSans
-Discord.Text = "https://discord.gg/ZYvZHmDtde"
+Discord.Text = "Check back later for dicord"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 Discord.TextSize = 20.000
 
