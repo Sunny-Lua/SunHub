@@ -138,7 +138,7 @@ Discord.BorderSizePixel = 0
 Discord.Position = UDim2.new(0.0418848172, 0, 0.913333356, 0)
 Discord.Size = UDim2.new(0, 200, 0, 50)
 Discord.Font = Enum.Font.SourceSans
-Discord.Text = "Check back later for dicord"
+Discord.Text = "https://discord.gg/YHJBJVJrap"
 Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
 Discord.TextSize = 20.000
 
@@ -281,8 +281,8 @@ Aimbot.MouseButton1Down:connect(function()
 	local Players = game:GetService("Players")
 
 	StarterGui:SetCore("SendNotification", {
-		Title = "Universal Aimbot";
-		Text = "made by Sunny";
+		Title = "Sun Hub";
+		Text = "If a red circle doesnt pop up its probably not supported ex: Solara";
 		Duration = 5;
 	})
 
