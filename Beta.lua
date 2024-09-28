@@ -10,24 +10,23 @@ local Combat = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Credits = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local MovementModule = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
-local InfiniteJumpActivate = Instance.new("TextButton")
+local MovementModule = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
+local InfiniteJumpActivate = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
 local InfiniteJump = Instance.new("TextLabel")
 local Speed = Instance.new("TextLabel")
 local SpeedActivate = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local SunHubV2 = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
-local CombatModule = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local SilentAim = Instance.new("TextLabel")
-local InfiniteAmmo = Instance.new("TextLabel")
-local SilentAimActivate = Instance.new("TextButton")
+local MiscModule = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local InfiniteAmmoActivate = Instance.new("TextButton")
+local Ban = Instance.new("TextLabel")
+local BanActivate = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local SunHubV2_2 = Instance.new("TextLabel")
 local Close_2 = Instance.new("TextButton")
@@ -49,6 +48,17 @@ local Close_4 = Instance.new("TextButton")
 local NameFrame = Instance.new("Frame")
 local Name = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
+local CombatModule = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local SilentAim = Instance.new("TextLabel")
+local InfiniteAmmo = Instance.new("TextLabel")
+local SilentAimActivate = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local InfiniteAmmoActivate = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local SunHubV2_5 = Instance.new("TextLabel")
+local Close_5 = Instance.new("TextButton")
+
 
 
 Script.Name = "Script"
@@ -62,6 +72,7 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.294820726, 0, 0.260050237, 0)
 Main.Size = UDim2.new(0, 528, 0, 382)
+Main.ZIndex = 999999999
 
 Module.Name = "Module"
 Module.Parent = Main
@@ -129,7 +140,21 @@ Credits.TextSize = 25.000
 
 UICorner_5.Parent = Credits
 
-UICorner_6.Parent = Main
+Misc.Name = "Misc"
+Misc.Parent = Module
+Misc.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Misc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(0.0743243247, 0, 0.366946787, 0)
+Misc.Size = UDim2.new(0, 125, 0, 26)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 25.000
+
+UICorner_6.Parent = Misc
+
+UICorner_7.Parent = Main
 
 MovementModule.Name = "MovementModule"
 MovementModule.Parent = Main
@@ -140,7 +165,7 @@ MovementModule.Position = UDim2.new(0.333333343, 0, 0.0287958123, 0)
 MovementModule.Size = UDim2.new(0, 339, 0, 357)
 MovementModule.Visible = false
 
-UICorner_7.Parent = MovementModule
+UICorner_8.Parent = MovementModule
 
 InfiniteJumpActivate.Name = "InfiniteJumpActivate"
 InfiniteJumpActivate.Parent = MovementModule
@@ -154,7 +179,7 @@ InfiniteJumpActivate.Text = ""
 InfiniteJumpActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfiniteJumpActivate.TextSize = 25.000
 
-UICorner_8.Parent = InfiniteJumpActivate
+UICorner_9.Parent = InfiniteJumpActivate
 
 InfiniteJump.Name = "InfiniteJump"
 InfiniteJump.Parent = MovementModule
@@ -194,7 +219,7 @@ SpeedActivate.Text = ""
 SpeedActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
 SpeedActivate.TextSize = 25.000
 
-UICorner_9.Parent = SpeedActivate
+UICorner_10.Parent = SpeedActivate
 
 SunHubV2.Name = "Sun Hub - V2"
 SunHubV2.Parent = MovementModule
@@ -222,73 +247,45 @@ Close.Text = ""
 Close.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close.TextSize = 14.000
 
-CombatModule.Name = "CombatModule"
-CombatModule.Parent = Main
-CombatModule.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-CombatModule.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CombatModule.BorderSizePixel = 0
-CombatModule.Position = UDim2.new(0.333333343, 0, 0.0287958123, 0)
-CombatModule.Size = UDim2.new(0, 339, 0, 357)
-CombatModule.Visible = false
+MiscModule.Name = "MiscModule"
+MiscModule.Parent = Main
+MiscModule.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MiscModule.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiscModule.BorderSizePixel = 0
+MiscModule.Position = UDim2.new(0.333333343, 0, 0.0287958123, 0)
+MiscModule.Size = UDim2.new(0, 339, 0, 357)
 
-UICorner_10.Parent = CombatModule
+UICorner_11.Parent = MiscModule
 
-SilentAim.Name = "SilentAim"
-SilentAim.Parent = CombatModule
-SilentAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SilentAim.BackgroundTransparency = 1.000
-SilentAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SilentAim.BorderSizePixel = 0
-SilentAim.Position = UDim2.new(0.126843661, 0, 0.0560224093, 0)
-SilentAim.Size = UDim2.new(0, 246, 0, 26)
-SilentAim.Font = Enum.Font.SourceSans
-SilentAim.Text = "Silent Aim"
-SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
-SilentAim.TextSize = 30.000
+Ban.Name = "Ban"
+Ban.Parent = MiscModule
+Ban.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ban.BackgroundTransparency = 1.000
+Ban.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ban.BorderSizePixel = 0
+Ban.Position = UDim2.new(0.126843661, 0, 0.0560224093, 0)
+Ban.Size = UDim2.new(0, 246, 0, 26)
+Ban.Font = Enum.Font.SourceSans
+Ban.Text = "Ban Yourself"
+Ban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ban.TextSize = 30.000
 
-InfiniteAmmo.Name = "InfiniteAmmo"
-InfiniteAmmo.Parent = CombatModule
-InfiniteAmmo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteAmmo.BackgroundTransparency = 1.000
-InfiniteAmmo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteAmmo.BorderSizePixel = 0
-InfiniteAmmo.Position = UDim2.new(0.135693222, 0, 0.182072833, 0)
-InfiniteAmmo.Size = UDim2.new(0, 246, 0, 26)
-InfiniteAmmo.Font = Enum.Font.SourceSans
-InfiniteAmmo.Text = "InfiniteAmmo"
-InfiniteAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteAmmo.TextSize = 30.000
+BanActivate.Name = "BanActivate"
+BanActivate.Parent = MiscModule
+BanActivate.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+BanActivate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BanActivate.BorderSizePixel = 0
+BanActivate.Position = UDim2.new(0.853085339, 0, 0.0560224093, 0)
+BanActivate.Size = UDim2.new(0, 30, 0, 26)
+BanActivate.Font = Enum.Font.SourceSans
+BanActivate.Text = ""
+BanActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
+BanActivate.TextSize = 25.000
 
-SilentAimActivate.Name = "InfiniteJumpActivate"
-SilentAimActivate.Parent = CombatModule
-SilentAimActivate.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-SilentAimActivate.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SilentAimActivate.BorderSizePixel = 0
-SilentAimActivate.Position = UDim2.new(0.853085339, 0, 0.0560224093, 0)
-SilentAimActivate.Size = UDim2.new(0, 30, 0, 26)
-SilentAimActivate.Font = Enum.Font.SourceSans
-SilentAimActivate.Text = ""
-SilentAimActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
-SilentAimActivate.TextSize = 25.000
-
-UICorner_11.Parent = SilentAimActivate
-
-InfiniteAmmoActivate.Name = "SpeedActivate"
-InfiniteAmmoActivate.Parent = CombatModule
-InfiniteAmmoActivate.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-InfiniteAmmoActivate.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteAmmoActivate.BorderSizePixel = 0
-InfiniteAmmoActivate.Position = UDim2.new(0.850135446, 0, 0.182072833, 0)
-InfiniteAmmoActivate.Size = UDim2.new(0, 30, 0, 26)
-InfiniteAmmoActivate.Font = Enum.Font.SourceSans
-InfiniteAmmoActivate.Text = ""
-InfiniteAmmoActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteAmmoActivate.TextSize = 25.000
-
-UICorner_12.Parent = InfiniteAmmoActivate
+UICorner_12.Parent = BanActivate
 
 SunHubV2_2.Name = "Sun Hub - V2"
-SunHubV2_2.Parent = CombatModule
+SunHubV2_2.Parent = MiscModule
 SunHubV2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SunHubV2_2.BackgroundTransparency = 1.000
 SunHubV2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -301,12 +298,12 @@ SunHubV2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 SunHubV2_2.TextSize = 30.000
 
 Close_2.Name = "Close"
-Close_2.Parent = CombatModule
+Close_2.Parent = MiscModule
 Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Close_2.BackgroundTransparency = 1.000
 Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Close_2.BorderSizePixel = 0
-Close_2.Position = UDim2.new(-0.451327443, 0, 0.254901975, 0)
+Close_2.Position = UDim2.new(-0.451327443, 0, 0.366946787, 0)
 Close_2.Size = UDim2.new(0, 125, 0, 26)
 Close_2.Font = Enum.Font.SourceSans
 Close_2.Text = ""
@@ -501,6 +498,98 @@ Version.Font = Enum.Font.SourceSans
 Version.Text = "Beta - Non Public"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 25.000
+
+CombatModule.Name = "CombatModule"
+CombatModule.Parent = Main
+CombatModule.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CombatModule.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CombatModule.BorderSizePixel = 0
+CombatModule.Position = UDim2.new(0.333333343, 0, 0.0287958123, 0)
+CombatModule.Size = UDim2.new(0, 339, 0, 357)
+CombatModule.Visible = false
+
+UICorner_16.Parent = CombatModule
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = CombatModule
+SilentAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.BackgroundTransparency = 1.000
+SilentAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0.126843661, 0, 0.0560224093, 0)
+SilentAim.Size = UDim2.new(0, 246, 0, 26)
+SilentAim.Font = Enum.Font.SourceSans
+SilentAim.Text = "Silent Aim"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 30.000
+
+InfiniteAmmo.Name = "InfiniteAmmo"
+InfiniteAmmo.Parent = CombatModule
+InfiniteAmmo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteAmmo.BackgroundTransparency = 1.000
+InfiniteAmmo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteAmmo.BorderSizePixel = 0
+InfiniteAmmo.Position = UDim2.new(0.135693222, 0, 0.182072833, 0)
+InfiniteAmmo.Size = UDim2.new(0, 246, 0, 26)
+InfiniteAmmo.Font = Enum.Font.SourceSans
+InfiniteAmmo.Text = "InfiniteAmmo"
+InfiniteAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteAmmo.TextSize = 30.000
+
+SilentAimActivate.Name = "InfiniteJumpActivate"
+SilentAimActivate.Parent = CombatModule
+SilentAimActivate.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+SilentAimActivate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SilentAimActivate.BorderSizePixel = 0
+SilentAimActivate.Position = UDim2.new(0.853085339, 0, 0.0560224093, 0)
+SilentAimActivate.Size = UDim2.new(0, 30, 0, 26)
+SilentAimActivate.Font = Enum.Font.SourceSans
+SilentAimActivate.Text = ""
+SilentAimActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAimActivate.TextSize = 25.000
+
+UICorner_17.Parent = SilentAimActivate
+
+InfiniteAmmoActivate.Name = "SpeedActivate"
+InfiniteAmmoActivate.Parent = CombatModule
+InfiniteAmmoActivate.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+InfiniteAmmoActivate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteAmmoActivate.BorderSizePixel = 0
+InfiniteAmmoActivate.Position = UDim2.new(0.850135446, 0, 0.182072833, 0)
+InfiniteAmmoActivate.Size = UDim2.new(0, 30, 0, 26)
+InfiniteAmmoActivate.Font = Enum.Font.SourceSans
+InfiniteAmmoActivate.Text = ""
+InfiniteAmmoActivate.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteAmmoActivate.TextSize = 25.000
+
+UICorner_18.Parent = InfiniteAmmoActivate
+
+SunHubV2_5.Name = "Sun Hub - V2"
+SunHubV2_5.Parent = CombatModule
+SunHubV2_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SunHubV2_5.BackgroundTransparency = 1.000
+SunHubV2_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SunHubV2_5.BorderSizePixel = 0
+SunHubV2_5.Position = UDim2.new(0.135693222, 0, 0.907563031, 0)
+SunHubV2_5.Size = UDim2.new(0, 246, 0, 26)
+SunHubV2_5.Font = Enum.Font.SourceSans
+SunHubV2_5.Text = "Sun Hub - V2"
+SunHubV2_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+SunHubV2_5.TextSize = 30.000
+
+Close_5.Name = "Close"
+Close_5.Parent = CombatModule
+Close_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_5.BackgroundTransparency = 1.000
+Close_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_5.BorderSizePixel = 0
+Close_5.Position = UDim2.new(-0.451327443, 0, 0.254901975, 0)
+Close_5.Size = UDim2.new(0, 125, 0, 26)
+Close_5.Font = Enum.Font.SourceSans
+Close_5.Text = ""
+Close_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_5.TextSize = 14.000
+
 EspActivate.MouseButton1Down:connect(function()
 	_G.FriendColor = Color3.fromRGB(0, 0, 255)
 	_G.EnemyColor = Color3.fromRGB(255, 0, 0)
@@ -715,57 +804,99 @@ SpeedActivate.MouseButton1Down:connect(function()
 	end)
 	Humanoid.WalkSpeed = _G.WS;
 end)
+BanActivate.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+		if k == "e" then
+			local Gun = game.ReplicatedStorage.Weapons:FindFirstChild(game.Players.LocalPlayer.NRPBS.EquippedTool.Value);
+			local Crit = math.random() > .6 and true or false;
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v and v.Character and v.Character:FindFirstChild("Head") then
+					local Distance = (game.Players.LocalPlayer.Character.Head.Position - v.Character.Head.Position).magnitude
+					for i  = 1,10 do
+						game.ReplicatedStorage.Events.HitPart:FireServer(v.Character.Head,
+							v.Character.Head.Position + Vector3.new(math.random(), math.random(), math.random()),
+							Gun.Name,
+							Crit and 2 or 1,
+							Distance,
+							Backstab,
+							Crit,
+							false,
+							1,
+							false,
+							Gun.FireRate.Value,
+							Gun.ReloadTime.Value,
+							Gun.Ammo.Value,
+							Gun.StoredAmmo.Value,
+							Gun.Bullets.Value,
+							Gun.EquipTime.Value,
+							Gun.RecoilControl.Value,
+							Gun.Auto.Value,
+							Gun['Speed%'].Value,
+							game.ReplicatedStorage.wkspc.DistributedTime.Value);
+					end
+				end
+			end
+		end
+	end)
+end)
 
-
-local function WJGJCA_fake_script() -- Movement.LocalScript 
+local function YGGWAKZ_fake_script() -- Movement.LocalScript 
 	local script = Instance.new('LocalScript', Movement)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.MovementModule.Visible = true
 	end)
 end
-coroutine.wrap(WJGJCA_fake_script)()
-local function XFYAUV_fake_script() -- Visuals.LocalScript 
+coroutine.wrap(YGGWAKZ_fake_script)()
+local function RWLJODU_fake_script() -- Visuals.LocalScript 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.VisualModule.Visible = true
 	end)
 end
-coroutine.wrap(XFYAUV_fake_script)()
-local function ADKSRN_fake_script() -- Combat.LocalScript 
+coroutine.wrap(RWLJODU_fake_script)()
+local function CITISWL_fake_script() -- Combat.LocalScript 
 	local script = Instance.new('LocalScript', Combat)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CombatModule.Visible = true
 	end)
 end
-coroutine.wrap(ADKSRN_fake_script)()
-local function JILBV_fake_script() -- Credits.LocalScript 
+coroutine.wrap(CITISWL_fake_script)()
+local function BCIF_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.CreditsFrame.Visible = true
 	end)
 end
-coroutine.wrap(JILBV_fake_script)()
-local function SSBKXGA_fake_script() -- Close.LocalScript 
+coroutine.wrap(BCIF_fake_script)()
+local function AQHE_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MiscModule.Visible = true
+	end)
+end
+coroutine.wrap(AQHE_fake_script)()
+local function XIFC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(SSBKXGA_fake_script)()
-local function ETMALGG_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(XIFC_fake_script)()
+local function RHYMC_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(ETMALGG_fake_script)()
-local function JFCFX_fake_script() -- Main.DraggableGUI 
+coroutine.wrap(RHYMC_fake_script)()
+local function TVWHXUT_fake_script() -- Main.DraggableGUI 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -803,20 +934,28 @@ local function JFCFX_fake_script() -- Main.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(JFCFX_fake_script)()
-local function SWHNLQ_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(TVWHXUT_fake_script)()
+local function LGNHWKR_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(SWHNLQ_fake_script)()
-local function CXPM_fake_script() -- Close_4.LocalScript 
+coroutine.wrap(LGNHWKR_fake_script)()
+local function KZYJA_fake_script() -- Close_4.LocalScript 
 	local script = Instance.new('LocalScript', Close_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CXPM_fake_script)()
+coroutine.wrap(KZYJA_fake_script)()
+local function KVWZI_fake_script() -- Close_5.LocalScript 
+	local script = Instance.new('LocalScript', Close_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(KVWZI_fake_script)()
